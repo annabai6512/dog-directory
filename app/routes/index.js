@@ -1,8 +1,11 @@
 import Route from '@ember/routing/route';
+import { service } from '@ember/service';
 
 export default class DogsRoute extends Route {
+  @service store;
   model() {
-    return [
+    this.store.push({
+      data: [
       {
         name: 'Saul',
         breed: 'Lab',
@@ -135,6 +138,12 @@ export default class DogsRoute extends Route {
         },
         activities: ['leadership', 'gaurding the office'],
       },
-    ];
+    ]});
+
+    // let response = await fetch('/api/dogs.json');
+    // let data = await response.json();
+    // return data.data;
+    
+
   }
 }

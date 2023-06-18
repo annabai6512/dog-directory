@@ -14,7 +14,11 @@
       <span>Description:</span> {{@dog.description}}
     </div>
     <div class="meals">
-      <span>Meals:</span> {{@dog.meals}}
+      <span>Meals:</span>
+      <ul>
+        <li>Breakfast: {{@dog.meals.breakfast}}</li>
+        <li>Dinner: {{@dog.meals.dinner}}</li>
+      </ul>
     </div>
     <div class="activities">
       <span>Activities:</span> {{@dog.activities}}

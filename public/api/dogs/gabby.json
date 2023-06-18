@@ -1,0 +1,18 @@
+{
+    "data": {
+        "name": "Gabby",
+        "breed": "Pit Bull",
+        "owner": "Dan",
+        "size": "MD",
+        "description": "A tutu-flaunting American bulldog/pitbull mix",
+        "meals": {
+            "breakfast": "wet food",
+            "dinner": "kibble"
+        },
+        "activities": [
+            "playing dress up",
+            "belly rubs",
+            "walks"
+        ]
+    }
+}

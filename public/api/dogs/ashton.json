@@ -1,0 +1,18 @@
+{
+    "data": {
+        "name": "Ashton",
+        "breed": "Husky",
+        "owner": "Kyle",
+        "size": "LG",
+        "description": "A fluffy terrier mix who runs on treats",
+        "meals": {
+            "breakfast": "Kibble",
+            "dinner": "Steak"
+        },
+        "activities": [
+            "Office visits",
+            "cold tub",
+            "walks"
+        ]
+    }
+}

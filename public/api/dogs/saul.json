@@ -1,0 +1,18 @@
+{
+    "data": {
+        "name": "Saul",
+        "breed": "Lab",
+        "owner": "Dave",
+        "size": "LG",
+        "description": "An energetic lab that loves to play",
+        "meals": {
+            "breakfast": "acorns",
+            "dinner": "kibble"
+        },
+        "activities": [
+            "walks",
+            "belly rubs",
+            "naps"
+        ]
+    }
+}

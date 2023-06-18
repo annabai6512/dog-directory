@@ -1,0 +1,18 @@
+{
+    "data": {
+        "name": "Watson",
+        "breed": "Golden Doodle",
+        "owner": "Brandon",
+        "size": "MD",
+        "description": "Fancy dog with a mean streak",
+        "meals": {
+            "breakfast": "breakfast bars",
+            "dinner": "socks"
+        },
+        "activities": [
+            "sleeping",
+            "eating laundry",
+            "playing with kids"
+        ]
+    }
+}

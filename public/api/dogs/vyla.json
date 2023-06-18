@@ -1,0 +1,17 @@
+{
+    "data": {
+        "name": "Vyla",
+        "breed": "Poodle",
+        "owner": "Skip",
+        "size": "SM",
+        "description": "The resident toy and bone hoarder",
+        "meals": {
+            "breakfast": "pancakes",
+            "dinner": "kibble"
+        },
+        "activities": [
+            "leadership",
+            "gaurding the office"
+        ]
+    }
+}

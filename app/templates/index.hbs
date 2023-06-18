@@ -1,0 +1,10 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Dog Directory</h2>
+</div>
+
+<div class="dogsList">
+    {{#each @model as |singleDog|}}
+        <Dog @dog={{singleDog}}/>
+    {{/each}}
+</div>

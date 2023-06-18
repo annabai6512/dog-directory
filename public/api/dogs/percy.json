@@ -1,0 +1,16 @@
+{
+    "data": {
+        "name": "Percy",
+        "breed": "Husky",
+        "owner": "Monica",
+        "size": "LG",
+        "description": "A wolf-sized pup with piercing blue eyes",
+        "meals": {
+            "breakfast": "kibble",
+            "dinner": "wet food"
+        },
+        "activities": [
+            "naps"
+        ]
+    }
+}

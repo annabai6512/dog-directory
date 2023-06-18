@@ -1,0 +1,18 @@
+{
+    "data": {
+        "name": "Goldie",
+        "breed": "Lab",
+        "owner": "Dave",
+        "size": "LG",
+        "description": "Office mommy dog",
+        "meals": {
+            "breakfast": "kibble",
+            "dinner": "wet can food"
+        },
+        "activities": [
+            "walks",
+            "belly rubs",
+            "dog park"
+        ]
+    }
+}

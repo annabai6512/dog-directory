@@ -1,17 +1,21 @@
 {
     "data": {
-        "name": "Benny",
-        "breed": "Hound",
-        "owner": "Brandon",
-        "size": "MD",
-        "description": "A belly-rub loving hound-mix",
-        "meals": {
-            "breakfast": "Merrick",
-            "dinner": "Merrick"
-        },
-        "activities": [
-            "belly rubs",
-            "head pats"
-        ]
+        "type": "dogs",
+        "id": "benny",
+        "attributes": {
+            "name": "Benny",
+            "breed": "Hound",
+            "owner": "Brandon",
+            "size": "MD",
+            "description": "A belly-rub loving hound-mix",
+            "meals": {
+                "breakfast": "Merrick",
+                "dinner": "Merrick"
+            },
+            "activities": [
+                "belly rubs",
+                "head pats"
+            ]
+        }
     }
 }

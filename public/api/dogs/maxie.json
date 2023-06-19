@@ -1,17 +1,21 @@
 {
     "data": {
-        "name": "Maxie",
-        "breed": "Doberman",
-        "owner": "Steve",
-        "size": "LG",
-        "description": "Spunky pup, who loves to play",
-        "meals": {
-            "breakfast": "raw meat",
-            "dinner": "more raw meat"
-        },
-        "activities": [
-            "gaurding the office",
-            "playing"
-        ]
+        "type": "dogs",
+        "id": "maxie",
+        "attributes": {
+            "name": "Maxie",
+            "breed": "Doberman",
+            "owner": "Steve",
+            "size": "LG",
+            "description": "Spunky pup, who loves to play",
+            "meals": {
+                "breakfast": "raw meat",
+                "dinner": "more raw meat"
+            },
+            "activities": [
+                "gaurding the office",
+                "playing"
+            ]
+        }
     }
 }

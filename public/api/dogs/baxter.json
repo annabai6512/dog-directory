@@ -1,17 +1,21 @@
 {
     "data": {
-        "name": "Baxter",
-        "breed": "Chihuahua",
-        "owner": "Skip",
-        "size": "XS",
-        "description": "The eldest, wisest, and tiniest dog of the office",
-        "meals": {
-            "breakfast": "kibble",
-            "dinner": "steak"
-        },
-        "activities": [
-            "leadership",
-            "naps"
-        ]
+        "type": "dogs",
+        "id": "baxter",
+        "attributes": {
+            "name": "Baxter",
+            "breed": "Chihuahua",
+            "owner": "Skip",
+            "size": "XS",
+            "description": "The eldest, wisest, and tiniest dog of the office",
+            "meals": {
+                "breakfast": "kibble",
+                "dinner": "steak"
+            },
+            "activities": [
+                "leadership",
+                "naps"
+            ]
+        }
     }
 }

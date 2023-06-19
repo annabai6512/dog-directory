@@ -1,18 +1,22 @@
 {
     "data": {
-        "name": "Taro",
-        "breed": "Great Pyrenees",
-        "owner": "Sara",
-        "size": "XL",
-        "description": "A great pyrenees mix often confused with a horse",
-        "meals": {
-            "breakfast": "kibble",
-            "dinner": "kibble"
-        },
-        "activities": [
-            "walks",
-            "belly rubs",
-            "dog park"
-        ]
+        "type": "dogs",
+        "id": "taro",
+        "attributes": {
+            "name": "Taro",
+            "breed": "Great Pyrenees",
+            "owner": "Sara",
+            "size": "XL",
+            "description": "A great pyrenees mix often confused with a horse",
+            "meals": {
+                "breakfast": "kibble",
+                "dinner": "kibble"
+            },
+            "activities": [
+                "walks",
+                "belly rubs",
+                "dog park"
+            ]
+        }
     }
 }

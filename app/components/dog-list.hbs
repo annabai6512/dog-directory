@@ -1,0 +1,12 @@
+<div class="dogsList">
+    <label>
+        <span>Search for your doggo:</span>
+        {{!-- this.query kept in sync with the input value --}}
+        <Input @value={{this.query}} class="light" />
+    </label>
+    <Dogs::Filter @dogs={{@dogs}} @query={{this.query}} as |results|>
+        {{#each results as |singleDog|}}
+            <Dog @dog={{singleDog}}/>
+        {{/each}}
+    </Dogs::Filter>
+</div>

@@ -1,6 +1,7 @@
 <div class="jumbo">
   <div class="right tomster"></div>
   <h2>Add a new dog</h2>
+  <LinkTo @route="index" class="button">Back</LinkTo>
   <form {{on "submit" this.save}}>
     <label>Dog's Name: </label>
     <Input @type="text" @value={{this.name}} /><br>

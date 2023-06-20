@@ -1,11 +1,11 @@
 import Model, { attr } from '@ember-data/model';
 
 export default class DogModel extends Model {
-  @attr name;
-  @attr breed;
-  @attr owner;
-  @attr size;
-  @attr description;
-  @attr meals;
-  @attr activities;
+  @attr('string') name;
+  @attr('string') breed;
+  @attr('string') owner;
+  @attr('string') size;
+  @attr('string') description;
+  @attr('string') meals;
+  @attr('string') activities;
 }

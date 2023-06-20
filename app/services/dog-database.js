@@ -5,6 +5,7 @@ import { A } from '@ember/array';
 
 export default class DogDatabaseService extends Service {
     @tracked allDogs = A([]);
+    @tracked idNum = 0;
     @service store;
 
     addNewDog(dog) {

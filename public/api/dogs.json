@@ -2,7 +2,7 @@
     "data": [
         {
             "type": "dog",
-            "id": "saul",
+            "id": 1,
             "attributes": {
                 "name": "Saul",
                 "breed": "Lab",
@@ -22,7 +22,7 @@
         },
         {
             "type": "dog",
-            "id": "goldie",
+            "id": 2,
             "attributes": {
                 "name": "Goldie",
                 "breed": "Lab",
@@ -42,7 +42,7 @@
         },
         {
             "type": "dog",
-            "id": "ashton",
+            "id": 3,
             "attributes": {
                 "name": "Ashton",
                 "breed": "Husky",
@@ -62,7 +62,7 @@
         },
         {
             "type": "dog",
-            "id": "maxie",
+            "id": 4,
             "attributes": {
                 "name": "Maxie",
                 "breed": "Doberman",
@@ -81,7 +81,7 @@
         },
         {
             "type": "dog",
-            "id": "taro",
+            "id": 5,
             "attributes": {
                 "name": "Taro",
                 "breed": "Great Pyrenees",
@@ -101,7 +101,7 @@
         },
         {
             "type": "dog",
-            "id": "gabby",
+            "id": 6,
             "attributes": {
                 "name": "Gabby",
                 "breed": "Pit Bull",
@@ -121,7 +121,7 @@
         },
         {
             "type": "dog",
-            "id": "percy",
+            "id": 7,
             "attributes": {
                 "name": "Percy",
                 "breed": "Husky",
@@ -139,7 +139,7 @@
         },
         {
             "type": "dog",
-            "id": "benny",
+            "id": 8,
             "attributes": {
                 "name": "Benny",
                 "breed": "Hound",
@@ -158,7 +158,7 @@
         },
         {
             "type": "dog",
-            "id": "watson",
+            "id": 9,
             "attributes": {
                 "name": "Watson",
                 "breed": "Golden Doodle",
@@ -178,7 +178,7 @@
         },
         {
             "type": "dog",
-            "id": "baxter",
+            "id": 10,
             "attributes": {
                 "name": "Baxter",
                 "breed": "Chihuahua",
@@ -197,7 +197,7 @@
         },
         {
             "type": "dog",
-            "id": "vyla",
+            "id": 11,
             "attributes": {
                 "name": "Vyla",
                 "breed": "Poodle",

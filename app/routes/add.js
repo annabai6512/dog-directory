@@ -9,7 +9,8 @@ export default class IndexRoute extends Route {
     if (this.dogDatabase.allDogs.length == 0) {
         return this.store.findAll('dog').then((res) => {
             this.dogDatabase.allDogs.pushObjects(res);
-              return res;
+            this.dogDatabase.idNum = this.dogDatabase.allDogs.length + 1;
+            return res;
           });
     }
   }

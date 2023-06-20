@@ -1,28 +1,22 @@
 <article class="dog detailed">
   <div class="details">
-    <h3>{{@dog.name}}</h3>
-
-    <div class="breed">
-      <span>Breed:</span> {{@dog.breed}}
-    </div>
-    <div class="owner">
-      <span>Owner:</span> {{@dog.owner}}
-    </div>
-    <div class="size">
-      <span>Size:</span> {{@dog.size}}
-    </div>
-    <div class="description">
-      <span>Description:</span> {{@dog.description}}
-    </div>
-    <div class="meals">
-      <span>Meals:</span>
-      <ul>
-        <li>Breakfast: {{@dog.meals.breakfast}}</li>
-        <li>Dinner: {{@dog.meals.dinner}}</li>
-      </ul>
-    </div>
-    <div class="activities">
-      <span>Activities:</span> {{@dog.activities}}
-    </div>
+    <label>Dog's Name: </label>
+    <Input @type="text" @value={{@dog.name}} /><br>
+    <label>Breed: </label>
+    <Input @type="text" @value={{@dog.breed}} /><br>
+    <label>Owner: </label>
+    <Input @type="text" @value={{@dog.owner}} /><br>
+    <label>Size: </label>
+    <Input @type="text" @value={{@dog.size}} /><br>
+    <label>Short description of your dog: </label>
+    <Input @type="text" @value={{@dog.description}} /><br>
+    <label>Dog's Breakfast: </label>
+    <Input @type="text" @value={{@dog.meals.breakfast}} /><br>
+    <label>Dog's Dinner: </label>
+    <Input @type="text" @value={{@dog.meals.dinner}} /><br>
+    <label>Dog's Activities: </label>
+    <Input @type="text" @value={{@dog.activities}} /><br>
+    {{!-- <button class="button" type="button" {{on "click" (fn @update @dog)}}>Update</button> --}}
+    <LinkTo @route="index" class="button">Save and Go Back</LinkTo>
   </div>
 </article>

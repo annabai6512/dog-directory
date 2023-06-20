@@ -15,6 +15,7 @@ export default class IndexRoute extends Route {
   }
 
   async model() {
+    console.log(this.dogDatabase.allDogs);
     return this.dogDatabase.allDogs;
   };
 }

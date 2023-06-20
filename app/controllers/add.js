@@ -9,25 +9,21 @@ export default class AddController extends Controller {
   @action
   save() {
     event.preventDefault();
-
+    console.log(this.meals);
     let activities = this.activities ? [...this.activities] : [];
     let dog = this.store.createRecord('dog', {
-      type: 'dog',
-      id: this.name,
-      attributes: {
         name: this.name,
         breed: this.breed,
         owner: this.owner,
         size: this.size,
         description: this.description,
         meals: {
-          breakfast: this.meals,
-          dinner: this.meals,
+          breakfast: this.breakfast,
+          dinner: this.dinner,
         },
-        activities: [this.activities],
-      },
+        activities: activities,
     });
-
+    
     this.dogDatabase.addNewDog(dog);
     console.log(this.dogDatabase.allDogs);
     // dog.save().then(() => {

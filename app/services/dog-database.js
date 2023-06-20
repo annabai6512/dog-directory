@@ -10,4 +10,8 @@ export default class DogDatabaseService extends Service {
     addNewDog(dog) {
         this.allDogs.pushObject(dog);
     }
+
+    deleteDog(dog) {
+        this.allDogs.removeObject(dog);
+    }
 }

@@ -6,6 +6,6 @@ export default class DogModel extends Model {
   @attr('string') owner;
   @attr('string') size;
   @attr('string') description;
-  @attr('string') meals;
-  @attr('string') activities;
+  @attr meals;
+  @attr activities;
 }

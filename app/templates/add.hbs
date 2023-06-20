@@ -1,0 +1,26 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Add a new dog</h2>
+  <p>
+    The Super Rentals website is a delightful project created to explore Ember.
+    By building a property rental site, we can simultaneously imagine traveling
+    AND building Ember applications.
+  </p>
+  <form {{on "submit" this.save}}>
+    <label>Dog's Name: </label>
+    <Input @type="text" @value={{this.name}} /><br>
+    <label>Breed: </label>
+    <Input @type="text" @value={{this.breed}} /><br>
+    <label>Owner: </label>
+    <Input @type="text" @value={{this.owner}} /><br>
+    <label>Size: </label>
+    <Input @type="text" @value={{this.size}} /><br>
+    <label>Short description of your dog: </label>
+    <Input @type="text" @value={{this.description}} /><br>
+    <label>Dog's Meals: </label>
+    <Input @type="text" @value={{this.meals}} /><br>
+    <label>Dog's Activities: </label>
+    <Input @type="text" @value={{this.activities}} /><br>
+    <button type="submit" >Save</button>
+  </form> 
+</div>

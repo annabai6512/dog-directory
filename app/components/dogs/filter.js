@@ -5,7 +5,9 @@ export default class DogsFilterComponent extends Component {
     let { dogs, query } = this.args;
 
     if (query) {
-        dogs = dogs.filter((dog) => dog.name.toLowerCase().includes(query.toLowerCase()));
+      dogs = dogs.filter((dog) =>
+        dog.name.toLowerCase().includes(query.toLowerCase())
+      );
     }
 
     return dogs;

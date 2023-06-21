@@ -9,7 +9,8 @@
   {{else}}
     {{#if this.showSaved}}
       <p>Successfully saved!</p>
+    {{else}}
+      <Dog::Detailed @dog={{@model}} @update={{this.update}}/>
     {{/if}}
-    <Dog::Detailed @dog={{@model}} @update={{this.update}}/>
   {{/if}}
 </div>

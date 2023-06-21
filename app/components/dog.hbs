@@ -1,28 +1,30 @@
-<article class="dog">
+<div class="dog">
   <div class="details">
-    <h3>{{@dog.name}}</h3>
-    <LinkTo @route="dog" @model={{@dog}}>Edit</LinkTo>
-    <div class="breed">
-      <span>Breed:</span> {{@dog.breed}}
+    <div class="name-edit">
+      <h2>{{@dog.name}}</h2>
+      <LinkTo @route="dog" class="edit-button" @model={{@dog}}>Edit</LinkTo>
     </div>
-    <div class="owner">
-      <span>Owner:</span> {{@dog.owner}}
+    <div class="category-item">
+      <span class="category">Breed:</span> {{@dog.breed}}
     </div>
-    <div class="size">
-      <span>Size:</span> {{@dog.size}}
+    <div class="category-item">
+      <span class="category">Owner:</span> {{@dog.owner}}
     </div>
-    <div class="description">
-      <span>Description:</span> {{@dog.description}}
+    <div class="category-item">
+      <span class="category">Size:</span> {{@dog.size}}
     </div>
-    <div class="meals">
-      <span>Meals:</span>
+    <div class="category-item">
+      <span class="category">Description:</span> {{@dog.description}}
+    </div>
+    <div class="category-item">
+      <span class="category">Meals:</span>
       <ul>
         <li>Breakfast: {{@dog.meals.breakfast}}</li>
         <li>Dinner: {{@dog.meals.dinner}}</li>
       </ul>
     </div>
-    <div class="activities">
-      <span>Activities:</span> {{@dog.activities}}
+    <div class="category-item">
+      <span class="category">Activities:</span> {{@dog.activities}}
     </div>
   </div>
-</article>
+</div>

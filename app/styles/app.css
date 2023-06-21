@@ -1,1 +1,136 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
+
+  
+body,
+h1,
+h2,
+h3,
+p,
+div,
+span,
+button {
+    font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+    /* line-height: 1.15; */
+    
+}
+
+body {
+    background: #f3f3f3;
+    margin: 1em 2em 1em;
+    height: 100%;
+}
+
+.dog-title {
+    color: #4c9b33;
+    display: flex;
+}
+
+.button {
+    padding: 5px 15px 5px;
+    text-decoration: none;
+    color: #fff;
+    background: #4c9b33;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.9;
+    display: inline-block;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.logo {
+    background: url(../assets/images/voyant-logo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    padding-right: 2em;
+}
+
+.add-search {
+    border: solid;
+    border-color: #A4AE9E;
+    margin: 2em 0 2em;
+    width: 40vw;
+    padding: 0 1em 1em;
+    text-align: center;
+}
+
+.add-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.dogs-list {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 2em;
+    row-gap: 2em;
+    justify-items: center;
+    justify-content: center;   
+}
+
+.single-dog {
+    width: 25vw;
+    height: 25vw;
+    padding: 1em;
+    background: rgb(76,155,51,0.2);
+    border-radius: 20px;
+}
+
+.dog {
+    margin: 0 1em 0;
+}
+
+.name-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-button {
+    padding: 3px 10px 3px;
+    height: 50%;
+    text-decoration: none;
+    color: #fff;
+    background: #4c9b33;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.category-item {
+    padding-bottom: 0.25em;
+}
+
+.category {
+    font-weight: bold;
+}
+
+
+.edit-delete {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.delete-button {
+    padding: 3px 10px 3px;
+    margin-left: 2em;
+    height: 50%;
+    text-decoration: none;
+    color: #fff;
+    background: #4c9b33;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    opacity: 0.9;
+}

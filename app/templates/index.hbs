@@ -1,8 +1,12 @@
-<div class="jumbo">
-  <div class="right tomster"></div>
-  <h2>Dogs rock!</h2>
+<div class="add-section">
+  <div class="add-search">
+    <h3>Add a New Dog</h3>
+    <LinkTo @route="add" class="button">Add Dog</LinkTo>
+  </div>
+  <div class="add-search">
+    <h3>Search for your doggo:</h3>
+    {{!-- this.query kept in sync with the input value --}}
+    <Input @value={{this.query}} class="light" />
+  </div>
 </div>
-
-<LinkTo @route="add" class="button">Add Dog</LinkTo>
-
-<DogList @dogs={{@model}}/>
+<DogList @dogs={{@model}} @query={{this.query}}/>

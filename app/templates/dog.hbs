@@ -1,7 +1,8 @@
-<div class="jumbo">
-  <div class="right tomster"></div>
-  <LinkTo @route="index" class="button">Back</LinkTo>
-  <h2>Edit a dog</h2>
-  <button class="button" type="button" {{on "click" (fn this.delete @model.id)}}>Delete</button>
+<div class="edit-dog">
+  <LinkTo @route="index" class="button" style="margin:2em 0 1em">Back</LinkTo>
+  <div class="edit-delete">
+    <h2>Edit a dog</h2>
+    <button class="delete-button" type="button" {{on "click" (fn this.delete @model.id)}}>Delete</button>
+  </div>
   <Dog::Detailed @dog={{@model}} @update={{this.update}}/>
 </div>

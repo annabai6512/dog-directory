@@ -1,22 +1,38 @@
-<article class="dog detailed">
+<div class="dog detailed">
   <div class="details">
-    <label>Dog's Name: </label>
-    <Input @type="text" @value={{@dog.name}} /><br>
-    <label>Breed: </label>
+    <div class="category-item">
+      <label>Dog's Name: </label>
+      <Input @type="text" @value={{@dog.name}} /><br>
+    </div>
+    <div class="category-item">
+      <label>Breed: </label>
     <Input @type="text" @value={{@dog.breed}} /><br>
-    <label>Owner: </label>
-    <Input @type="text" @value={{@dog.owner}} /><br>
-    <label>Size: </label>
-    <Input @type="text" @value={{@dog.size}} /><br>
-    <label>Short description of your dog: </label>
-    <Input @type="text" @value={{@dog.description}} /><br>
-    <label>Dog's Breakfast: </label>
-    <Input @type="text" @value={{@dog.meals.breakfast}} /><br>
-    <label>Dog's Dinner: </label>
-    <Input @type="text" @value={{@dog.meals.dinner}} /><br>
-    <label>Dog's Activities: </label>
-    <Input @type="text" @value={{@dog.activities}} /><br>
+    </div>   
+    <div class="category-item">
+      <label>Owner: </label>
+      <Input @type="text" @value={{@dog.owner}} /><br>
+    </div> 
+    <div class="category-item">
+      <label>Size: </label>
+      <Input @type="text" @value={{@dog.size}} /><br>
+    </div>
+    <div class="category-item">
+      <label>Short description of your dog: </label>
+      <Input @type="text" @value={{@dog.description}} /><br>
+    </div>
+    <div class="category-item">
+      <label>Dog's Breakfast: </label>
+      <Input @type="text" @value={{@dog.meals.breakfast}} /><br>
+    </div>
+    <div class="category-item">
+      <label>Dog's Dinner: </label>
+      <Input @type="text" @value={{@dog.meals.dinner}} /><br>
+    </div>
+    <div class="category-item">
+      <label>Dog's Activities: </label>
+      <Input @type="text" @value={{@dog.activities}} /><br>
+    </div>
     {{!-- <button class="button" type="button" {{on "click" (fn @update @dog)}}>Update</button> --}}
-    <LinkTo @route="index" class="button">Save and Go Back</LinkTo>
+    <LinkTo @route="index" class="button" style="margin-top:1em">Save and Go Back</LinkTo>
   </div>
-</article>
+</div>

@@ -33,6 +33,6 @@
       <Input @type="text" @value={{@dog.activities}} /><br>
     </div>
     {{!-- <button class="button" type="button" {{on "click" (fn @update @dog)}}>Update</button> --}}
-    <LinkTo @route="index" class="button" style="margin-top:1em">Save and Go Back</LinkTo>
+    <button class="button" style="margin-top:1em;cursor:pointer" {{on "click" @update}}>Save</button>
   </div>
 </div>

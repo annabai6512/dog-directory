@@ -1,8 +1,15 @@
 <div class="edit-dog">
-  <LinkTo @route="index" class="button" style="margin:2em 0 1em">Back</LinkTo>
+  <LinkTo @route="index" class="button" style="margin:2em 0 1em" {{on "click" this.back}}>Back</LinkTo>
   <div class="edit-delete">
     <h2>Edit a dog</h2>
     <button class="delete-button" type="button" {{on "click" (fn this.delete @model.id)}}>Delete</button>
   </div>
-  <Dog::Detailed @dog={{@model}} @update={{this.update}}/>
+  {{#if this.showDeleted}}
+    <p>Successfully deleted!</p>
+  {{else}}
+    {{#if this.showSaved}}
+      <p>Successfully saved!</p>
+    {{/if}}
+    <Dog::Detailed @dog={{@model}} @update={{this.update}}/>
+  {{/if}}
 </div>

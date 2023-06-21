@@ -13,7 +13,6 @@ export default class AddController extends Controller {
     event.preventDefault();
     console.log(this.submitted);
     if (!this.submitted) {
-      let activities = this.activities ? [...this.activities] : [];
       let dog = this.store.createRecord('dog', {
           id: this.dogDatabase.idNum,
           name: this.name,
@@ -25,7 +24,7 @@ export default class AddController extends Controller {
             breakfast: this.breakfast,
             dinner: this.dinner,
           },
-          activities: activities,
+          activities: this.activities,
       });
       
       this.dogDatabase.addNewDog(dog);

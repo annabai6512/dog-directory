@@ -2,39 +2,43 @@
   <div class="right tomster"></div>
   <LinkTo @route="index" class="button" style="margin:2em 0 1em" {{on "click" this.back}}>Back</LinkTo>
   <h2>Add a new dog</h2>
-  <form {{on "submit" this.save}}>
-    <div class="category-item">
-      <label>Dog's Name: </label>
-      <Input @type="text" @value={{this.name}} /><br>
-    </div>
-    <div class="category-item">
-      <label>Breed: </label>
-      <Input @type="text" @value={{this.breed}} /><br>
-    </div>
-    <div class="category-item">
-      <label>Owner: </label>
-      <Input @type="text" @value={{this.owner}} /><br>
-    </div>
-    <div class="category-item">
-      <label>Size: </label>
-      <Input @type="text" @value={{this.size}} /><br>
-    </div>
-    <div class="category-item">
-      <label>Short description of your dog: </label>
-      <Input @type="text" @value={{this.description}} /><br>
-    </div>
-    <div class="category-item">
-      <label>Dog's Breakfast: </label>
-      <Input @type="text" @value={{this.breakfast}} /><br>
-    </div>
-    <div class="category-item">
-      <label>Dog's Dinner: </label>
-      <Input @type="text" @value={{this.dinner}} /><br>
-    </div>
-    <div class="category-item">
-      <label>Dog's Activities: </label>
-      <Input @type="text" @value={{this.activities}} /><br>
-    </div>
-    <button type="submit" class="button" style="margin-top:1em">Save</button>
-  </form> 
+  {{#if this.submitted}} 
+    <p>Successfully added!</p>
+  {{else}}
+    <form {{on "submit" this.save}}>
+      <div class="category-item">
+        <label>Dog's Name: </label>
+        <Input @type="text" @value={{this.name}} /><br>
+      </div>
+      <div class="category-item">
+        <label>Breed: </label>
+        <Input @type="text" @value={{this.breed}} /><br>
+      </div>
+      <div class="category-item">
+        <label>Owner: </label>
+        <Input @type="text" @value={{this.owner}} /><br>
+      </div>
+      <div class="category-item">
+        <label>Size: </label>
+        <Input @type="text" @value={{this.size}} /><br>
+      </div>
+      <div class="category-item">
+        <label>Short description of your dog: </label>
+        <Input @type="text" @value={{this.description}} /><br>
+      </div>
+      <div class="category-item">
+        <label>Dog's Breakfast: </label>
+        <Input @type="text" @value={{this.breakfast}} /><br>
+      </div>
+      <div class="category-item">
+        <label>Dog's Dinner: </label>
+        <Input @type="text" @value={{this.dinner}} /><br>
+      </div>
+      <div class="category-item">
+        <label>Dog's Activities: </label>
+        <Input @type="text" @value={{this.activities}} /><br>
+      </div>
+      <button type="submit" class="button" style="margin-top:1em;cursor:pointer">Save</button>
+    </form> 
+  {{/if}}
 </div>
